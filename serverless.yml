@@ -1,12 +1,14 @@
 service: serverless-base
 
 plugins:
-  - serverless-plugin-browserify
+  - serverless-plugin-browserifier
+
+package:
+  individually: true
 
 provider:
   name: aws
   runtime: nodejs8.10
-  individually: true
 
 functions:
 
