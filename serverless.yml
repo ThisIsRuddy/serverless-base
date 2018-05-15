@@ -1,4 +1,4 @@
-service: saws-new
+service: serverless-base
 
 plugins:
   - serverless-plugin-browserify
