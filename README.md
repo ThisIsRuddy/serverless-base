@@ -1,5 +1,5 @@
 # serverless-base
-Serverless boilerplate
+Serverless boilerplate with individual module deployment & node_module bundling
 
 ```
 npm i
