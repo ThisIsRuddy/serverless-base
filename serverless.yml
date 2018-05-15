@@ -1,0 +1,21 @@
+service: saws-new
+
+plugins:
+  - serverless-plugin-browserify
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  individually: true
+
+functions:
+
+  getBar:
+    handler: functions/bar.handler
+    events:
+      - http: GET bar
+
+  getFoo:
+    handler: functions/foo.handler
+    events:
+          - http: GET foo
