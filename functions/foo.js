@@ -1,6 +1,4 @@
-const response = require('../includes/response')
-const arrayLast = require('array-last')
+import response from '../includes/response'
+import arrayLast from 'array-last'
 
-module.exports.handler = (event, context, callback) => {
-	response("A message from foo!", callback)
-}
+export default (event, context, callback) => response("A message from foo!", callback)

@@ -1,7 +1,7 @@
 service: serverless-base
 
 plugins:
-  - serverless-plugin-browserifier
+  - serverless-webpack
 
 package:
   individually: true
@@ -13,11 +13,16 @@ provider:
 functions:
 
   getBar:
-    handler: functions/bar.handler
+    handler: functions/bar.default
     events:
       - http: GET bar
 
   getFoo:
-    handler: functions/foo.handler
+    handler: functions/foo.default
     events:
           - http: GET foo
+
+custom:
+  webpack:
+    webpackConfig: './webpack.config.js'
+    includeModules: true
