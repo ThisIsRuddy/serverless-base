@@ -1,5 +1,6 @@
 .DS_Store
 .idea
 .serverless
+.webpack
 node_modules
 package-lock.json
